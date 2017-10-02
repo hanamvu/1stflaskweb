@@ -1,0 +1,28 @@
+/*h4 {
+  color: green;
+
+}
+h3 {
+    color: red;
+    background-color: yellow;
+}
+#red_tag{
+  color:red;
+}
+.font-35{
+  font-size: 35px;
+}
+.girl-type{
+  background-color: lightblue;
+}
+
+body {
+    background-color: black;
+}*/
+.card-girl-type{
+  min-height: 700px !important;
+}
+.card-girl-img{
+  object-fit: cover;
+  height: 20vw;
+}

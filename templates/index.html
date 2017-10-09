@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Cưa gái đại cương HUST</title>
+    <title>Bán súng HUST</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
@@ -16,25 +16,25 @@
     <!-- De file css cua minh o duoi file cua bootstrap thi neu xung dot no se an file cua minh -->
   </head>
   <body>
-    <h1 class="text-primary jumbotron display-3 d-xs d-none d-md-block ">Cuow gais dai cuong</h1>
+    <h1 class="text-primary jumbotron display-3 d-xs d-none d-md-block ">List súng ngày hôm nay</h1>
     <div class="container">
       <div class="row">
-        {% for girl_type in girl_types %}
+        {% for weapon in weapons %}
 
           <div class="col-md-4 col-sm-6 m*-3">
-            <div class="card-girl-type card mb-4">
-              <img src="{{ girl_type["image"] }}" alt="{{ girl_type["name"] }}"class="card-girl-img mb-4 img-fluid card-img-top"></img>
+            <div class="card">
+              <img src="{{ weapon["image"] }}" alt="{{ weapon["name"] }}"class="mb-4 img-fluid card-img-top"></img>
               <div class="card-body">
                   <div class="card-title">
-                      <h3> {{ girl_type["name"] }} </h3>
+                      <h3> {{ weapon["name"] }} </h3>
                   </div>
-                <h4 class="text-primary">{{ girl_type["description"] }}</h4>
+                <h4 class="text-primary">{{ weapon["description"] }}</h4>
 
 
               </div>
               <div class="card-footer">
                 <div class="clearfix">
-                  <button class="btn btn-primary float-right">Chi tiết</button>
+                  <button class="btn btn-primary float-right">Mua!</button>
                 </div>
               </div>
             </div>
@@ -45,7 +45,5 @@
       </div>
     </div>
 
-
-    <h3 id="red_tag">RED hat enterprise linux</h3>
   </body>
 </html>
